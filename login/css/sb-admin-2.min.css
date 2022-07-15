@@ -7990,7 +7990,7 @@ a:focus {
 }
 .bg-gradient-primary {
 	background-color: var(--blue);
-	background-image: url("/assets/background.jpg");
+	background-image: url("login/assets/background.jpg");
     width: auto;
     height: 100vh;
     left: 0px;
