@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    <link rel="icon" href="/assets/nikila.ico" />
 
-    <title>Silahkan Login</title>
+    <title>Dashboard Login</title>
 
     <!-- Custom fonts for this template-->
     <link
@@ -40,10 +41,11 @@
                         class="h4 mb-4"
                         style="color: #1293e4; font-weight: 700; size: 40px"
                       >
-                        Masuk
+                        Login Dashboard
                       </h1>
                       <p class="warna-text">
-                        Selamat Datang! Silahkan masukkan akunmu
+                        <b>Selamat Datang!</b> <br />
+                        Silahkan masukkan akunmu
                       </p>
                     </div>
                     <form class="user">
@@ -72,6 +74,8 @@
                         >
                         <input
                           type="password"
+                          placeholder="Masukan Password"
+                          required
                           class="form-control form-control-user"
                           id="exampleInputPassword"
                         />
@@ -88,22 +92,34 @@
                             for="customCheck"
                             >Ingat saya</label
                           >
-                          <label class="warna-text" style="float: right"
-                            >Lupa Password?</label
+                          <a
+                            href="/login/pages/forgot-password.html"
+                            class="warna-text"
+                            style="
+                              float: right;
+                              color: #1293e4;
+                              font-weight: 600;
+                            "
+                          >
+                            Lupa Password?</a
+                          >
                           >
                         </div>
                       </div>
-                      <input
-                        type="submit"
-                        value="Login"
-                        class="btn btn-danger btn-user btn-block"
-                      />
+                      <form action="login/pages/dashboard.html">
+                        <input
+                          type="submit"
+                          value="Login"
+                          class="btn btn-danger btn-user btn-block"
+                          onclick="location.href='/login/pages/dashboard.html';"
+                        />
+                      </form>
                     </form>
                     <hr />
                     <div class="text-center">
                       <p class="warna-text">
                         Belum punya akun?
-                        <a href="forgot-password.html">daftar</a>
+                        <a href="login/pages/daftar.html">daftar</a>
                       </p>
                     </div>
                   </div>
